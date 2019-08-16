@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--City ListVC-->
+        <scene sceneID="KJJ-tN-FA5">
+            <objects>
+                <viewController storyboardIdentifier="XMCityListVC" id="GEA-LD-b6l" customClass="XMCityListVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="foE-wM-ZeM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="KMT-Ji-kOI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EY3-ub-Xem">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="点击加载17个城市(0已加载)">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.45490196078431372" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addMoreCities:" destination="GEA-LD-b6l" eventType="touchUpInside" id="GNh-hm-eLr"/>
+                                    </connections>
+                                </button>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KMT-Ji-kOI" firstAttribute="top" secondItem="naW-c7-TLD" secondAttribute="top" id="5yz-sc-lpR"/>
+                            <constraint firstItem="KMT-Ji-kOI" firstAttribute="leading" secondItem="naW-c7-TLD" secondAttribute="leading" id="cm1-IW-a4T"/>
+                            <constraint firstItem="naW-c7-TLD" firstAttribute="bottom" secondItem="KMT-Ji-kOI" secondAttribute="bottom" id="mYc-cy-tk2"/>
+                            <constraint firstItem="naW-c7-TLD" firstAttribute="trailing" secondItem="KMT-Ji-kOI" secondAttribute="trailing" id="vov-bO-BlP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="naW-c7-TLD"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadMoreBtn" destination="EY3-ub-Xem" id="ew9-b6-vGx"/>
+                        <outlet property="tbView" destination="KMT-Ji-kOI" id="czq-5j-cgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vx8-70-djK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="47"/>
+        </scene>
+    </scenes>
+</document>

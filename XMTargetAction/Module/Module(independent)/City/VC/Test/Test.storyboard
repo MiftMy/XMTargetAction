@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TestVC-->
+        <scene sceneID="PWT-Gp-d4l">
+            <objects>
+                <viewController storyboardIdentifier="XMTestVC" id="BbM-1c-wtP" customClass="XMTestVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFq-2a-8id">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我只是用来测试的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-7f-euU">
+                                <rect key="frame" x="139" y="264" width="98.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jp-jS-mUn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbX-h4-Vzx">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="cyR-cw-EFo"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="gbc-pf-hW9"/>
+                                        </constraints>
+                                        <items>
+                                            <navigationItem title="测试VC" id="ghV-Gy-3Na">
+                                                <barButtonItem key="leftBarButtonItem" title="关闭" id="7vj-UE-FOQ">
+                                                    <connections>
+                                                        <action selector="closePage:" destination="BbM-1c-wtP" id="nEt-7U-L2U"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SbX-h4-Vzx" firstAttribute="leading" secondItem="1jp-jS-mUn" secondAttribute="leading" id="1ZK-2p-Nlx"/>
+                                    <constraint firstAttribute="height" constant="64" id="DhL-Hs-oo7"/>
+                                    <constraint firstAttribute="trailing" secondItem="SbX-h4-Vzx" secondAttribute="trailing" id="Kwp-9K-dwD"/>
+                                    <constraint firstAttribute="bottom" secondItem="SbX-h4-Vzx" secondAttribute="bottom" id="oCf-lJ-4xb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bgg-7f-euU" firstAttribute="centerX" secondItem="EFq-2a-8id" secondAttribute="centerX" id="6tk-Mb-mPb"/>
+                            <constraint firstItem="1jp-jS-mUn" firstAttribute="leading" secondItem="hJb-jB-xkf" secondAttribute="leading" id="Mn0-1b-Ijh"/>
+                            <constraint firstItem="Bgg-7f-euU" firstAttribute="top" secondItem="1jp-jS-mUn" secondAttribute="bottom" constant="200" id="VCv-25-Hrg"/>
+                            <constraint firstItem="hJb-jB-xkf" firstAttribute="trailing" secondItem="1jp-jS-mUn" secondAttribute="trailing" id="cyA-zU-6aG"/>
+                            <constraint firstItem="1jp-jS-mUn" firstAttribute="top" secondItem="EFq-2a-8id" secondAttribute="top" id="iNm-fq-cxd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hJb-jB-xkf"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBG" destination="1jp-jS-mUn" id="oGS-QQ-mBG"/>
+                        <outlet property="navBar" destination="SbX-h4-Vzx" id="7Q5-by-vpk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5YB-2w-YFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-831" y="-167"/>
+        </scene>
+    </scenes>
+</document>

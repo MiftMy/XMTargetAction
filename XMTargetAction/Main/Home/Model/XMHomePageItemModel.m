@@ -1,0 +1,13 @@
+//
+//  XMHomePageItemModel.m
+//  XMDemo
+//
+//  Created by mifit on 2018/5/28.
+//  Copyright © 2018年 Mifit. All rights reserved.
+//
+
+#import "XMHomePageItemModel.h"
+
+@implementation XMHomePageItemModel
+
+@end

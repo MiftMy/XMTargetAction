@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XMVideoHotCellStyle2" rowHeight="88" id="xwv-XK-ETZ" customClass="XMVideoHotCellStyle2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwv-XK-ETZ" id="dse-Zu-iDf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一纸婚约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvR-Bo-aTX">
+                        <rect key="frame" x="8" y="10" width="64" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="JI3-iy-NcU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.3921568627" green="0.019607843140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评分：8.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQx-Wo-GAP">
+                        <rect key="frame" x="8" y="31" width="54" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="ptj-dK-I3P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                        <color key="textColor" red="0.3921568627" green="0.019607843140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolderImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-WA-aGk">
+                        <rect key="frame" x="306.5" y="0.0" width="45.5" height="68.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ngu-WA-aGk" secondAttribute="height" multiplier="2:3" id="nE7-1j-Die"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标签:剧情/爱情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWK-xs-BQw">
+                        <rect key="frame" x="8" y="53.5" width="88" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="N33-6y-vje"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                        <color key="textColor" red="0.3921568627" green="0.019607843140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tQx-Wo-GAP" firstAttribute="leading" secondItem="dse-Zu-iDf" secondAttribute="leading" constant="8" id="281-Ys-1Bh"/>
+                    <constraint firstAttribute="bottom" secondItem="Ngu-WA-aGk" secondAttribute="bottom" constant="9" id="9Km-4x-QCl"/>
+                    <constraint firstItem="Ngu-WA-aGk" firstAttribute="top" secondItem="dse-Zu-iDf" secondAttribute="top" id="LWK-9I-lYw"/>
+                    <constraint firstAttribute="bottom" secondItem="iWK-xs-BQw" secondAttribute="bottom" constant="12" id="WTQ-d6-Cjd"/>
+                    <constraint firstItem="OvR-Bo-aTX" firstAttribute="leading" secondItem="dse-Zu-iDf" secondAttribute="leading" constant="8" id="Y0O-2U-ppw"/>
+                    <constraint firstAttribute="trailing" secondItem="Ngu-WA-aGk" secondAttribute="trailing" constant="23" id="Zcm-ed-dLp"/>
+                    <constraint firstItem="tQx-Wo-GAP" firstAttribute="centerY" secondItem="dse-Zu-iDf" secondAttribute="centerY" constant="-3" id="ek9-3N-pmC"/>
+                    <constraint firstItem="iWK-xs-BQw" firstAttribute="leading" secondItem="dse-Zu-iDf" secondAttribute="leading" constant="8" id="rQu-G8-WfU"/>
+                    <constraint firstItem="OvR-Bo-aTX" firstAttribute="top" secondItem="dse-Zu-iDf" secondAttribute="top" constant="10" id="xyG-TA-QK4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="Ngu-WA-aGk" id="0JX-Vj-b4F"/>
+                <outlet property="videoName" destination="OvR-Bo-aTX" id="C2z-4l-gfv"/>
+                <outlet property="videoScare" destination="tQx-Wo-GAP" id="zdy-mQ-Bg8"/>
+                <outlet property="videoType" destination="iWK-xs-BQw" id="Bve-h1-vnM"/>
+            </connections>
+            <point key="canvasLocation" x="-763" y="4"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeHolderImage" width="40" height="60"/>
+    </resources>
+</document>

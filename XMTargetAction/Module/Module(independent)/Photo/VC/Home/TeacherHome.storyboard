@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teacher HomeVC-->
+        <scene sceneID="bx7-7a-Vfu">
+            <objects>
+                <viewController storyboardIdentifier="XMTeacherHomeVC" id="Atl-ri-01O" customClass="XMTeacherHomeVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAV-rs-abt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎访问我的主页，我是苍老师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ow-Qn-TzM">
+                                <rect key="frame" x="87.5" y="268" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8kS-xx-Mwq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39215686274509803" green="0.019607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolderImageB" translatesAutoresizingMaskIntoConstraints="NO" id="oCP-Dh-cNA">
+                                <rect key="frame" x="30" y="76" width="315" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="sKk-Xy-od9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD7-fM-hpY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-7W-mEk">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="RUC-Sx-PLc"/>
+                                        </constraints>
+                                        <color key="barTintColor" red="0.20000000000000001" green="0.45490196078431372" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="苍老师主页" id="Ld3-xz-BN9">
+                                                <barButtonItem key="leftBarButtonItem" title="关闭" id="0ge-ss-WIO">
+                                                    <connections>
+                                                        <action selector="closePage:" destination="Atl-ri-01O" id="Xzc-sP-2qA"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="44R-dD-gKB"/>
+                                    <constraint firstItem="uNn-7W-mEk" firstAttribute="leading" secondItem="hD7-fM-hpY" secondAttribute="leading" id="QqS-7N-U4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="uNn-7W-mEk" secondAttribute="trailing" id="S8b-ke-wUA"/>
+                                    <constraint firstAttribute="bottom" secondItem="uNn-7W-mEk" secondAttribute="bottom" id="ePC-3J-pml"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ow-Qn-TzM" firstAttribute="top" secondItem="oCP-Dh-cNA" secondAttribute="bottom" constant="12" id="5S0-C5-lkJ"/>
+                            <constraint firstItem="hD7-fM-hpY" firstAttribute="trailing" secondItem="AYZ-uu-laj" secondAttribute="trailing" id="CWd-91-cox"/>
+                            <constraint firstItem="hD7-fM-hpY" firstAttribute="top" secondItem="ZAV-rs-abt" secondAttribute="top" id="Eyb-Y0-h70"/>
+                            <constraint firstItem="oCP-Dh-cNA" firstAttribute="centerX" secondItem="ZAV-rs-abt" secondAttribute="centerX" id="Nnh-Pd-bIY"/>
+                            <constraint firstItem="AYZ-uu-laj" firstAttribute="trailing" secondItem="oCP-Dh-cNA" secondAttribute="trailing" constant="30" id="PIv-fw-BDj"/>
+                            <constraint firstItem="4Ow-Qn-TzM" firstAttribute="centerX" secondItem="ZAV-rs-abt" secondAttribute="centerX" id="aSD-tq-kY6"/>
+                            <constraint firstItem="oCP-Dh-cNA" firstAttribute="top" secondItem="hD7-fM-hpY" secondAttribute="bottom" constant="12" id="hNm-Bu-QHl"/>
+                            <constraint firstItem="oCP-Dh-cNA" firstAttribute="leading" secondItem="AYZ-uu-laj" secondAttribute="leading" constant="30" id="mLt-O6-4PN"/>
+                            <constraint firstItem="hD7-fM-hpY" firstAttribute="leading" secondItem="ZAV-rs-abt" secondAttribute="leading" id="rlE-uo-vDK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AYZ-uu-laj"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeIcon" destination="oCP-Dh-cNA" id="Ofg-hO-DE2"/>
+                        <outlet property="navBG" destination="hD7-fM-hpY" id="Tky-eW-FFG"/>
+                        <outlet property="navBar" destination="uNn-7W-mEk" id="R6b-2p-Zbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5w-aY-lgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.19999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeHolderImageB" width="90" height="135"/>
+    </resources>
+</document>
